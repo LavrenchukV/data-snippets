@@ -40,7 +40,6 @@ df = df.loc[df.column == 'somevalue']
 Grab DataFrame rows where column value is present in a list
 ```
 test_data = {'hi': 'yo', 'bye': 'later'}
-```
 df = pd.DataFrame(list(d.items()), columns=['col1', 'col2'])
 valuelist = ['yo', 'heya']
 df[df.col2.isin(valuelist)]
