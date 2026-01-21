@@ -1,15 +1,15 @@
-"""
-ML project template notes.
+# ML Project Template Notes
 
 Contains:
 - project folder structure (bash)
 - requirements template
 - venv setup commands
 
-"""
+---
 
-# === Project structure (bash command)===
-"""
+## 📁 Project structure (bash)
+
+```bash
 mkdir -p \
   data/raw data/processed data/external \
   notebooks \
@@ -23,11 +23,12 @@ mkdir -p \
   great_expectations \
   mlruns \
   artifacts
-"""
+```
+---
 
-# === requirements (libraries in Linux command)
+## 📦 Requirements (Linux)
 
-"""
+```bash
 cat > requirements.txt << 'EOF'
 pandas
 numpy
@@ -41,13 +42,13 @@ joblib
 great-expectations
 pytest
 EOF
-"""
+```
 
-# === venv + install requirements (Linux command)
 
-"""
+## 🐍 Virtual environment setup (Linux / Ubuntu)
+
+```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 uv pip install -r requirements.txt
-"""
