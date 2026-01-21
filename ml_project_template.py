@@ -23,11 +23,11 @@ mkdir -p \
   great_expectations \
   mlruns \
   artifacts
-
 """
+
 # === requirements (libraries in Linux command)
-"""
 
+"""
 cat > requirements.txt << 'EOF'
 pandas
 numpy
@@ -41,7 +41,6 @@ joblib
 great-expectations
 pytest
 EOF
-
 """
 
 # === venv + install requirements (Linux command)
